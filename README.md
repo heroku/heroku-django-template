@@ -1,0 +1,2 @@
+# Heroku Django Starter Template
+
