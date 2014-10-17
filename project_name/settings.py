@@ -1,5 +1,5 @@
 """
-Django settings for project_name project.
+Django settings for {{ project_name }} project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = '{{ project_name }}.urls'
 
-WSGI_APPLICATION = '{{ project_name}} .wsgi.application'
+WSGI_APPLICATION = '{{ project_name}}.wsgi.application'
 
 
 # Database
