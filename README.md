@@ -38,5 +38,5 @@ You can replace ``helloworld`` with your desired project name.
 
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
 - [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
-- [django-postgrespool](hhttps://warehouse.python.org/project/django-postgrespool/)
+- [django-postgrespool](https://warehouse.python.org/project/django-postgrespool/)
 - [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
