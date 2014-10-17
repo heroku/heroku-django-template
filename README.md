@@ -4,12 +4,9 @@ A project template for Django 1.7.
 
 ## Features
 
-- Django 1.7
-- Gunicorn
-- DJ-Database-URL
-- WhiteNoise for Static Assets
-- Settings and configuration for both Heroku production and local development
-
+- Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
+- Enhancements to Django's statc file serving functionality via WhiteNoise
+- Enhancements to Django's database functionality via Django-PostgresPool and DJ-Database-URL
 
 ## How to Use
 
@@ -26,3 +23,13 @@ Using this template to create a new Django app is easy::
     $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
 
 You can replace ``helloworld`` with your desired project name.
+
+## Deployment to Heroku
+
+    $ git init
+    $ git add -A
+
+    $ heroku create
+    $ git push heroku master
+
+    $ heroku run python manage.py syncdb
