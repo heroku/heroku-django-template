@@ -28,6 +28,7 @@ You can replace ``helloworld`` with your desired project name.
 
     $ git init
     $ git add -A
+    $ git commit -m 'initial commit'
 
     $ heroku create
     $ git push heroku master
