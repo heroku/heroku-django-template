@@ -24,6 +24,14 @@ Using this template to create a new Django app is easy::
 
 You can replace ``helloworld`` with your desired project name.
 
+## Running Locally
+
+In order to test on your local machine, follow these steps:
+
+1. Activate the working environment ('$ source venv/bin/activate')
+2. Install all packages from requirements.txt ('$ pip install -r requirements.txt')
+3. Run local server ('$ foreman start')
+
 ## Deployment to Heroku
 
     $ git init
