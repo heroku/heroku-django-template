@@ -33,7 +33,7 @@ You can replace ``helloworld`` with your desired project name.
     $ heroku create
     $ git push heroku master
 
-    $ heroku run python manage.py syncdb
+    $ heroku run python manage.py migrate
 
 ## Further Reading
 
