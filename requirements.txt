@@ -1,8 +1,8 @@
-Django==1.7.3
+Django==1.7.4
 SQLAlchemy==0.9.8
 dj-database-url==0.3.0
 django-postgrespool==0.3.0
-gunicorn==19.1.1
-psycopg2==2.5.4
+gunicorn==19.2.1
+psycopg2==2.6
 whitenoise==1.0.6
 wsgiref==0.1.2
