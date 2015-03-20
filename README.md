@@ -5,7 +5,7 @@ An utterly fantastic project starter template for Django 1.7.
 ## Features
 
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
-- Enhancements to Django's statc file serving functionality via WhiteNoise
+- Enhancements to Django's static file serving functionality via WhiteNoise
 - Enhancements to Django's database functionality via django-postgrespool and dj-database-url
 
 ## How to Use
