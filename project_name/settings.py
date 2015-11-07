@@ -25,9 +25,6 @@ SECRET_KEY = "{{ secret_key }}"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
-
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -64,6 +61,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'debug': True,
         },
     },
 ]
