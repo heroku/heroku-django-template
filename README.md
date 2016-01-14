@@ -6,7 +6,6 @@ An utterly fantastic project starter template for Django 1.9.
 
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
 - Enhancements to Django's static file serving functionality via WhiteNoise
-- Enhancements to Django's database functionality via django-postgrespool and dj-database-url
 
 ## How to Use
 
@@ -39,5 +38,4 @@ You can replace ``helloworld`` with your desired project name.
 
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
 - [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
-- [django-postgrespool](https://warehouse.python.org/project/django-postgrespool/)
 - [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
