@@ -34,6 +34,8 @@ You can replace ``helloworld`` with your desired project name.
 
     $ heroku run python manage.py migrate
 
+See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
+
 ## Further Reading
 
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
