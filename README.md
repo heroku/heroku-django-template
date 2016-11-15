@@ -36,6 +36,10 @@ You can replace ``helloworld`` with your desired project name.
 
 See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
 
+## Using Python 3?
+
+Just update `runtime.txt` to `python-3.5.2` (no trailing spaces!).
+
 ## Further Reading
 
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
