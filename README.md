@@ -5,7 +5,8 @@ An utterly fantastic project starter template for Django 1.9.
 ## Features
 
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
-- Enhancements to Django's static file serving functionality via WhiteNoise
+- Enhancements to Django's static file serving functionality via WhiteNoise.
+- Latest Python 3.5 runtime environment. 
 
 ## How to Use
 
@@ -36,9 +37,9 @@ You can replace ``helloworld`` with your desired project name.
 
 See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
 
-## Using Python 3?
+## Using Python 2.7?
 
-Just update `runtime.txt` to `python-3.5.2` (no trailing spaces!).
+Just update `runtime.txt` to `python-2.7.12` (no trailing spaces!).
 
 ## Further Reading
 
