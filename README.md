@@ -6,7 +6,7 @@ An utterly fantastic project starter template for Django 1.10.
 
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
 - Enhancements to Django's static file serving functionality via WhiteNoise.
-- Latest Python 3.5 runtime environment. 
+- Latest Python 3.6 runtime environment. 
 
 ## How to Use
 
