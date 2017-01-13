@@ -3,5 +3,29 @@
   "description": "A barebones Python app, which can easily be deployed to Heroku.",
   "image": "heroku/python",
   "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql", "heroku-redis" ]
+  "env": {
+    "SECRET_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "2"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "DATABASE"
+    },
+    {
+      "plan": "heroku-redis:hobby-dev",
+      "as": "REDIS"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
 }
