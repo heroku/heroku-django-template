@@ -1,1 +1,1 @@
-web: gunicorn {{ project_name }}.wsgi 0.0.0.0:$PORT
+web: gunicorn config.wsgi 0.0.0.0:$PORT

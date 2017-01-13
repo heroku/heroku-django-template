@@ -8,8 +8,9 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
-
 import os
+import urlparse
+
 import environ
 
 # Simplified settings management
@@ -55,7 +56,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = '{{ project_name }}.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
@@ -83,6 +84,13 @@ WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
     'default': env.db(),
+}
+
+# Cache
+# https://docs.djangoproject.com/en/1.10/ref/settings/#caches
+
+CACHES = {
+    'default': env.cache('REDIS_URL', default='locmemcache://')
 }
 
 AUTH_PASSWORD_VALIDATORS = [
