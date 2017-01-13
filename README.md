@@ -6,7 +6,7 @@ An utterly fantastic project starter template for Django 1.10.
 
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
 - Enhancements to Django's static file serving functionality via WhiteNoise.
-- Latest Python 3.6 runtime environment. 
+- Latest Python 3.6 runtime environment.
 
 ## How to Use
 
@@ -18,22 +18,28 @@ To use this project, follow these steps:
 
 ## Creating Your Project
 
-Using this template to create a new Django app is easy::
+Using this template to create a new Django app is easy:
 
-    $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
+    $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=.env,Procfile helloworld
 
 You can replace ``helloworld`` with your desired project name.
 
 ## Deployment to Heroku
 
-    $ git init
-    $ git add -A
-    $ git commit -m "Initial commit"
+```sh
+git init
+git add -A
+git commit -m "Initial commit"
 
-    $ heroku create
-    $ git push heroku master
+heroku create
+git push heroku master
 
-    $ heroku run python manage.py migrate
+heroku run python manage.py migrate
+```
+
+or
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
 
@@ -45,4 +51,5 @@ Just update `runtime.txt` to `python-2.7.13` (no trailing spaces or newlines!).
 
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
 - [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
-- [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
+- [django-environ](https://github.com/joke2k/django-environ/)
+- [Python on Heroku](https://devcenter.heroku.com/categories/python)
