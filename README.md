@@ -41,6 +41,9 @@ See also, a [ready-made application](https://github.com/heroku/python-getting-st
 
 Just update `runtime.txt` to `python-2.7.13` (no trailing spaces or newlines!).
 
+
+## License: MIT
+
 ## Further Reading
 
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
