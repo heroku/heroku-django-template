@@ -131,3 +131,36 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {
+        'debug_format': {
+            'format': 'Log level: %(levelname)s, DateTime: %(asctime)s, Module: %(module)s, Process ID: %(process)d'
+                      'Thread ID: %(thread)d, Message: %(message)s'
+        },
+        'info_format': {
+            'format': 'Log level: %(levelname)s - Message: %(message)s'
+        }
+    },
+    'handlers': {
+        'console_info': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'info_format'
+        },
+        'console_debug': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'debug_format',
+            'filters': ['require_debug_true'],
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console_info', 'console_debug'],
+            'propagate': True
+        }
+    }
+}
