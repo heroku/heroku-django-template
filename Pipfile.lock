@@ -45,10 +45,10 @@
         },
         "django-heroku": {
             "hashes": [
-                "sha256:e60a80363981fa8b3230e9b97d921a49964c08bdc081f8c4245cb639263471b8",
-                "sha256:4aab3590e16e5f5989427e491e183397e148c1ce02d95078b60e8a60e1327bb8"
+                "sha256:f43f42dfee7af7d14d044c084bd46634e7d1db6d77718626ae6985ee2bfafedc",
+                "sha256:d19b33cefd8f8f722a5ae02a206a12d5a47bbc9aacbd72e787c1e7bd2de4c214"
             ],
-            "version": "==0.2.0"
+            "version": "==0.3.0"
         },
         "gunicorn": {
             "hashes": [
