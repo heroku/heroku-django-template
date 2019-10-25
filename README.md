@@ -6,7 +6,6 @@ An utterly fantastic project starter template for Django 2.0.
 
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
 - Enhancements to Django's static file serving functionality via WhiteNoise.
-- Latest Python 3.6 runtime environment.
 
 ## How to Use
 
